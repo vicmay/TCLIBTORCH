@@ -1,0 +1,369 @@
+To run the TCL commands on the commands line (CLI) you MUST do the following "echo 'tclcommands' | tclsh". Abosolutely NO "-e" or "-c" stupid nonsense. 
+
+
+
+NOTE: WE ARE DONE WITH REFACTORING, THE ISSUE RIGHT NOW IS FIXING THE TESTS THAT ARE FAILING, THERE ARE A FEW OF THEM OUT THERE!!!!
+
+
+
+
+
+
+
+
+
+
+
+
+# LibTorch TCL Extension - API Refactoring Rules
+
+## 🎯 **REFACTORING OBJECTIVE**
+Convert commands from positional parameters and snake_case to named parameters and camelCase syntax while maintaining 100% backward compatibility.
+
+## 📋 **CURRENT STATUS**
+- **Branch**: REFACTOR-TRY1
+
+## 🔧 **REFACTORING WORKFLOW FOR EACH COMMAND**
+
+### **Step 1: Select and Verify Next Command**
+1. **Get next command**:
+   ```bash
+   python3 scripts/query_next_commands.py --next 5
+   ```
+
+2. **CRITICAL: Verify command status**
+   ```bash
+   # Check if command is already refactored
+   python3 scripts/update_command_status.py rescan COMMAND_NAME
+   
+   # Check if test file exists and run it
+   ls tests/refactored/COMMAND_NAME_test.tcl
+   if exists: tclsh tests/refactored/COMMAND_NAME_test.tcl
+   
+   # Check if doc file exists
+   ls docs/refactored/COMMAND_NAME.md
+   ```
+
+3. **If any check passes**:
+   - Command already refactored: Update database and move to next command
+   - Test file exists: Run it first, verify results
+   - Doc file exists: Review it first
+
+### **Step 2: Implement Dual Syntax Support**
+1. **Find the command implementation** in source files
+2. **Create parameter structure** for the command
+3. **Implement ParseDualSyntax function** supporting both:
+   - Positional syntax (backward compatibility)
+   - Named parameter syntax (new)
+4. **Update command function** to use the parser
+5. **Add camelCase alias registration** in `src/libtorchtcl.cpp`
+
+### **Step 3: Build and Test**
+```bash
+# Build the project
+cd build && make -j4
+
+# Run the tests
+cd ../tests/refactored && tclsh COMMAND_NAME_test.tcl
+
+# If tests fail:
+# 1. Fix the implementation
+# 2. Rebuild: cd ../../build && make -j4
+# 3. Rerun tests: cd ../tests/refactored && tclsh COMMAND_NAME_test.tcl
+```
+
+### **Step 4: Create Documentation**
+1. **Check if doc exists first**:
+   ```bash
+   ls docs/refactored/COMMAND_NAME.md
+   ```
+
+2. **If not exists, create**:
+   - Create `docs/refactored/COMMAND_NAME.md`
+   - Include both syntaxes with examples
+   - Document all parameters and error handling
+   - Show migration examples
+
+### **Step 5: Update Tracking and Commit**
+1. **Stage all changes**:
+   ```bash
+   git add .
+   ```
+
+2. **Verify staged changes**:
+   ```bash
+   git status
+   # Should show all relevant files staged
+   ```
+
+3. **Update database**:
+   ```bash
+   # Mark as complete only if all checks pass:
+   # - Dual syntax implemented
+   # - camelCase alias added
+   # - Tests passing
+   # - Documentation complete
+   python3 scripts/update_command_status.py mark-complete COMMAND_NAME
+   
+   # If not all complete, update individual status:
+   python3 scripts/update_command_status.py update COMMAND_NAME --dual-syntax true --camel-case true --tests true --docs true
+   ```
+
+4. **Commit changes**:
+   ```bash
+   ./scripts/commit_refactored.sh COMMAND_NAME
+   ```
+
+### **Step 6: Verify Final State**
+1. **Check database status**:
+   ```bash
+   python3 scripts/update_command_status.py rescan COMMAND_NAME
+   ```
+
+2. **Verify git status**:
+   ```bash
+   git status
+   # Should show "nothing to commit, working tree clean"
+   ```
+
+3. **Run tests one final time**:
+   ```bash
+   cd tests/refactored && tclsh COMMAND_NAME_test.tcl
+   ```
+
+## 📁 **KEY FILES AND LOCATIONS**
+
+### **Source Files**
+- `src/basic_tensor_ops.cpp` - Basic tensor operations
+- `src/tensor_creation_ops.cpp` - Tensor creation commands
+- `src/libtorchtcl.cpp` - Command registration
+- `src/neural_network_ops.cpp` - Neural network layers
+- `src/optimizer_ops.cpp` - Optimizers and schedulers
+- `src/loss_function_ops.cpp` - Loss functions
+
+### **Test Files**
+- `tests/refactored/[command]_test.tcl` - Individual command tests
+- `tests/refactored/` - All refactored command tests
+
+### **Documentation**
+- `docs/refactored/[command].md` - Individual command docs
+- `COMMAND-TRACKING.md` - Progress tracking
+- `REFACTOR-TODO.md` - Complete refactoring plan
+
+### **Scripts**
+- `./scripts/select_next_command.sh` - Show next commands to refactor
+- `./scripts/commit_refactored.sh [command]` - Git commit refactored command
+- `./scripts/update_command_status.py` - Update the SQLITE database, etc.
+Usage: python3 update_command_status.py <command> [options]
+
+Commands:
+  mark-complete COMMAND    Mark command as completely refactored
+  update COMMAND OPTIONS   Update specific aspects of a command
+  rescan COMMAND           Rescan command status from codebase
+  rescan-all               Rescan all commands
+
+Update options:
+  --dual-syntax [true|false]       Has dual syntax support
+  --camel-case [true|false]        Has camelCase alias
+  --tests [true|false]             Has test file
+  --docs [true|false]              Has documentation
+
+Examples:
+  python3 update_command_status.py mark-complete torch::linear
+  python3 update_command_status.py update torch::conv2d --dual-syntax true --tests true
+  python3 update_command_status.py rescan torch::tensor_add
+  python3 update_command_status.py rescan-all
+
+- `./scripts/test_refactored.sh [command]` - Test specific command
+
+## 🏗️ **IMPLEMENTATION PATTERNS**
+
+### **Parameter Structure Pattern**
+```cpp
+struct CommandArgs {
+    std::string input;
+    std::string other;
+    double alpha = 1.0;
+    // ... other parameters
+    
+    bool IsValid() const {
+        return !input.empty() && !other.empty();
+    }
+};
+```
+
+### **Dual Syntax Parser Pattern**
+```cpp
+CommandArgs ParseCommandArgs(Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+    CommandArgs args;
+    
+    if (objc >= 2 && Tcl_GetString(objv[1])[0] != '-') {
+        // Positional syntax (backward compatibility)
+        // Parse positional arguments
+    } else {
+        // Named parameter syntax
+        // Parse named arguments
+    }
+    
+    if (!args.IsValid()) {
+        throw std::runtime_error("Required parameters missing");
+    }
+    
+    return args;
+}
+```
+
+### **Command Registration Pattern**
+```cpp
+// In src/libtorchtcl.cpp
+Tcl_CreateObjCommand(interp, "torch::command_name", CommandName_Cmd, NULL, NULL);
+Tcl_CreateObjCommand(interp, "torch::commandName", CommandName_Cmd, NULL, NULL);  // camelCase alias
+```
+
+## 🧪 **TESTING REQUIREMENTS**
+
+### **Test Categories**
+1. **Basic functionality** - Both syntaxes work
+2. **Parameter validation** - Error handling
+3. **Mathematical correctness** - Results are correct
+4. **Data type support** - Different dtypes work
+5. **Edge cases** - Zero values, large values, etc.
+6. **Syntax consistency** - Both syntaxes produce same results
+
+### **Test File Structure**
+```tcl
+#!/usr/bin/env tclsh
+package require tcltest
+namespace import tcltest::*
+
+# Load extension
+if {[catch {load ../../build/libtorchtcl.so}]} {
+    puts "Failed to load libtorchtcl.so"
+    exit 1
+}
+
+# Test configuration
+configure -testdir [file dirname [info script]]
+configure -verbose {pass fail skip error}
+
+# Test cases for positional syntax
+test command-1.1 {Basic positional syntax} {
+    # Test implementation
+} {expected_result}
+
+# Test cases for named syntax
+test command-2.1 {Named parameter syntax} {
+    # Test implementation
+} {expected_result}
+
+# Test cases for camelCase alias
+test command-3.1 {CamelCase alias} {
+    # Test implementation
+} {expected_result}
+
+# Error handling tests
+test command-4.1 {Error handling} {
+    # Test implementation
+} {expected_result}
+
+cleanupTests
+```
+
+## 📊 **PROGRESS TRACKING**
+
+### **Update COMMAND-TRACKING.md**
+- Mark completed commands with ✅
+- Update completion percentages
+- Update next commands list
+- Update overall progress statistics
+
+## 🚨 **IMPORTANT RULES**
+
+### **Backward Compatibility**
+- **NEVER** break existing positional syntax
+- All existing code must continue to work
+- New syntax is additive, not replacement
+
+### **Error Handling**
+- Provide clear error messages for both syntaxes
+- Validate all parameters
+- Handle edge cases gracefully
+
+### **Documentation**
+- Document both syntaxes with examples
+- Include migration guide for each command
+- Show parameter tables and return values
+
+### **Testing**
+- Test both syntaxes thoroughly
+- Test error conditions
+- Test edge cases and different data types
+- All tests must pass before committing
+
+### **Code Quality**
+- Use consistent naming patterns
+- Follow existing code style
+- Add proper error handling
+- Include parameter validation
+
+## 🔄 **RESTART PROCEDURE**
+
+### **If Process is Interrupted**
+1. **Check current branch**: `git branch` (should be on REFACTOR-TRY1)
+2. **Check progress**: `./scripts/select_next_command.sh`
+3. **Review recent commits**: `git log --oneline -10`
+4. **Continue with next command** from the workflow above
+
+### **If Starting Fresh**
+1. **Checkout correct branch**: `git checkout REFACTOR-TRY1`
+2. **Build the project**: `cd build && make -j4`
+3. **Check progress**: `./scripts/select_next_command.sh`
+4. **Start with next command** from the workflow above
+
+## 📈 **SUCCESS CRITERIA**
+
+### **For Each Command**
+- ✅ Dual syntax support implemented
+- ✅ camelCase alias registered
+- ✅ Comprehensive tests passing
+- ✅ Documentation complete
+- ✅ Backward compatibility verified
+- ✅ Committed to git
+
+### **Overall Project**
+- ✅ 100% backward compatibility maintained
+- ✅ Complete documentation updated
+- ✅ All tests passing
+- ✅ Modern API with named parameters
+
+## 💡 **TIPS FOR CONTINUATION**
+
+1. **Always check progress first**: `./scripts/select_next_command.sh`
+2. **Build after each change**: `cd build && make -j4`
+3. **Test thoroughly**: All tests must pass!!! DO NOT PROCEED TO THE NEXT TASK UNTIL YOU RUN THE TESTS AND VERIFY THAT THEY ALL ARE PASSING!!!!!
+4. **Document completely**: Both syntaxes with examples
+5. **Commit regularly**: Use the commit script
+6. **Maintain consistency**: Follow established patterns
+7. **Preserve compatibility**: Never break existing code
+
+## 🆘 **TROUBLESHOOTING**
+
+### **Build Issues**
+- Check CUDA/compiler versions
+- Verify all dependencies installed
+- Clean build: `cd build && make clean && make -j4`
+
+### **Test Failures**
+- Check tensor_create syntax (use named parameters)
+- Verify tensor handles are valid
+- Check error message clarity
+
+### **Git Issues**
+- Ensure on correct branch: `git checkout REFACTOR-TRY1`
+- Check for uncommitted changes: `git status`
+- Make sure that after each commit, the status is: "nothing to commit, working tree clean", in other words, each commit must be preceeded with "git add ."
+- Use commit script: `./scripts/commit_refactored.sh [command]`
+
+---
+
+**Remember**: This is a systematic refactoring process. Each command follows the same pattern. Consistency and thoroughness are key to success.

@@ -1,0 +1,3 @@
+/home/user/CascadeProjects/LIBTORCH/test-static/build/CMakeFiles/test_static.dir
+/home/user/CascadeProjects/LIBTORCH/test-static/build/CMakeFiles/edit_cache.dir
+/home/user/CascadeProjects/LIBTORCH/test-static/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+/home/user/CascadeProjects/LIBTORCH/build/CMakeFiles/libtorchtcl.dir
+/home/user/CascadeProjects/LIBTORCH/build/CMakeFiles/edit_cache.dir
+/home/user/CascadeProjects/LIBTORCH/build/CMakeFiles/rebuild_cache.dir

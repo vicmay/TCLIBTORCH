@@ -1,0 +1,1018 @@
+~/CascadeProjects/LIBTORCH/build$ make clean && make -j8
+[  2%] Building CXX object CMakeFiles/libtorchtcl.dir/src/libtorchtcl.cpp.o
+[  4%] Building CXX object CMakeFiles/libtorchtcl.dir/src/helpers.cpp.o
+[  6%] Building CXX object CMakeFiles/libtorchtcl.dir/src/neural_device_management.cpp.o
+[  9%] Building CXX object CMakeFiles/libtorchtcl.dir/src/tensor_core_functions.cpp.o
+[ 11%] Building CXX object CMakeFiles/libtorchtcl.dir/src/training_workflow.cpp.o
+[ 13%] Building CXX object CMakeFiles/libtorchtcl.dir/src/additional_optimizers.cpp.o
+[ 16%] Building CXX object CMakeFiles/libtorchtcl.dir/src/loss_functions.cpp.o
+[ 18%] Building CXX object CMakeFiles/libtorchtcl.dir/src/learning_rate_schedulers.cpp.o
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerStep_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:90:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   90 | int LRSchedulerStep_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerExponential_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:141:43: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  141 | int LRSchedulerExponential_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerCosine_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:186:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  186 | int LRSchedulerCosine_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerStepUpdate_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:239:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  239 | int LRSchedulerStepUpdate_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int GetLR_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:291:26: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  291 | int GetLR_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerMultiplicative_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:320:46: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  320 | int LRSchedulerMultiplicative_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerPolynomial_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:365:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  365 | int LRSchedulerPolynomial_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerCosineAnnealingWarmRestarts_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:426:59: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  426 | int LRSchedulerCosineAnnealingWarmRestarts_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                                ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerLinearWithWarmup_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:487:48: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  487 | int LRSchedulerLinearWithWarmup_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                     ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerConstantWithWarmup_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:546:50: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  546 | int LRSchedulerConstantWithWarmup_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerMultiStep_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:601:41: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  601 | int LRSchedulerMultiStep_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerCosineAnnealing_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:655:47: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  655 | int LRSchedulerCosineAnnealing_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                    ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerPlateau_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:708:39: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  708 | int LRSchedulerPlateau_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                            ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerInverseSqrt_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:768:43: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  768 | int LRSchedulerInverseSqrt_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerNoam_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:821:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  821 | int LRSchedulerNoam_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp: In function ‘int LRSchedulerOneCycleAdvanced_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/learning_rate_schedulers.cpp:874:48: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  874 | int LRSchedulerOneCycleAdvanced_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                     ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/tensor_core_functions.cpp: In function ‘int TensorRandn_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/tensor_core_functions.cpp:4:32: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    4 | int TensorRandn_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                     ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/tensor_core_functions.cpp: In function ‘int TensorRand_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/tensor_core_functions.cpp:48:31: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   48 | int TensorRand_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                    ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/tensor_core_functions.cpp: In function ‘int TensorItem_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/tensor_core_functions.cpp:92:31: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   92 | int TensorItem_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                    ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/tensor_core_functions.cpp: In function ‘int TensorNumel_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/tensor_core_functions.cpp:142:32: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  142 | int TensorNumel_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                     ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/loss_functions.cpp: In function ‘int MSELoss_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/loss_functions.cpp:4:28: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    4 | int MSELoss_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                 ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/loss_functions.cpp: In function ‘int CrossEntropyLoss_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/loss_functions.cpp:55:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   55 | int CrossEntropyLoss_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/loss_functions.cpp: In function ‘int NLLLoss_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/loss_functions.cpp:120:28: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  120 | int NLLLoss_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                 ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/loss_functions.cpp: In function ‘int BCELoss_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/loss_functions.cpp:185:28: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  185 | int BCELoss_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                 ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/additional_optimizers.cpp: In function ‘int OptimizerAdamW_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/additional_optimizers.cpp:4:35: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    4 | int OptimizerAdamW_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                        ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/additional_optimizers.cpp: In function ‘int OptimizerRMSprop_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/additional_optimizers.cpp:63:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   63 | int OptimizerRMSprop_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/additional_optimizers.cpp: In function ‘int OptimizerMomentumSGD_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/additional_optimizers.cpp:130:41: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  130 | int OptimizerMomentumSGD_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/additional_optimizers.cpp: In function ‘int OptimizerAdagrad_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/additional_optimizers.cpp:195:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  195 | int OptimizerAdagrad_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/training_workflow.cpp: In function ‘int LayerParameters_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/training_workflow.cpp:4:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    4 | int LayerParameters_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/training_workflow.cpp: In function ‘int ParametersTo_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/training_workflow.cpp:45:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   45 | int ParametersTo_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/training_workflow.cpp: In function ‘int ModelTrain_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/training_workflow.cpp:94:31: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   94 | int ModelTrain_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                    ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/training_workflow.cpp: In function ‘int ModelEval_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/training_workflow.cpp:125:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  125 | int ModelEval_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+[ 20%] Building CXX object CMakeFiles/libtorchtcl.dir/src/advanced_layers.cpp.o
+[ 23%] Building CXX object CMakeFiles/libtorchtcl.dir/src/advanced_tensor_ops.cpp.o
+[ 25%] Building CXX object CMakeFiles/libtorchtcl.dir/src/basic_tensor_ops.cpp.o
+[ 27%] Building CXX object CMakeFiles/libtorchtcl.dir/src/signal_processing.cpp.o
+[ 30%] Building CXX object CMakeFiles/libtorchtcl.dir/src/basic_layers.cpp.o
+[ 32%] Building CXX object CMakeFiles/libtorchtcl.dir/src/basic_optimizers.cpp.o
+[ 34%] Building CXX object CMakeFiles/libtorchtcl.dir/src/model_io.cpp.o
+[ 37%] Building CXX object CMakeFiles/libtorchtcl.dir/src/cuda_utils.cpp.o
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp: In function ‘int TensorVar_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp:4:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    4 | int TensorVar_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp: In function ‘int TensorStd_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp:68:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   68 | int TensorStd_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp: In function ‘int TensorIsCuda_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp:132:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  132 | int TensorIsCuda_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp: In function ‘int TensorIsContiguous_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp:160:39: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  160 | int TensorIsContiguous_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                            ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp: In function ‘int TensorContiguous_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp:188:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  188 | int TensorContiguous_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp: In function ‘int TensorWhere_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp:220:32: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  220 | int TensorWhere_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                     ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp: In function ‘int TensorExpand_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp:265:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  265 | int TensorExpand_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp: In function ‘int TensorRepeat_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp:301:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  301 | int TensorRepeat_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp: In function ‘int TensorIndexSelect_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp:337:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  337 | int TensorIndexSelect_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp: In function ‘int TensorMedian_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp:382:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  382 | int TensorMedian_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp: In function ‘int TensorQuantile_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp:428:35: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  428 | int TensorQuantile_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                        ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp: In function ‘int TensorMode_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_ops.cpp:479:31: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  479 | int TensorMode_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                    ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp: In function ‘int BatchNorm1d_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp:40:32: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   40 | int BatchNorm1d_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                     ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp: In function ‘int LayerNorm_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp:87:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   87 | int LayerNorm_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp: In function ‘int GroupNorm_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp:143:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  143 | int GroupNorm_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp: In function ‘int ConvTranspose2d_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp:186:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  186 | int ConvTranspose2d_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp: In function ‘int LocalResponseNorm_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp:294:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  294 | int LocalResponseNorm_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp: In function ‘int CrossMapLRN2D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp:335:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  335 | int CrossMapLRN2D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp: In function ‘int BatchNorm3D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp:377:32: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  377 | int BatchNorm3D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                     ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp: In function ‘int InstanceNorm1D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp:423:35: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  423 | int InstanceNorm1D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                        ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp: In function ‘int InstanceNorm2D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp:469:35: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  469 | int InstanceNorm2D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                        ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp: In function ‘int InstanceNorm3D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp:515:35: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  515 | int InstanceNorm3D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                        ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp: In function ‘int RMSNorm_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp:561:28: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  561 | int RMSNorm_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                 ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp: In function ‘int SpectralNorm_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp:629:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  629 | int SpectralNorm_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp: In function ‘int WeightNorm_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_layers.cpp:685:31: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  685 | int WeightNorm_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                    ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_tensor_ops.cpp: In function ‘int TensorCreate_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_tensor_ops.cpp:16:9: warning: variable ‘shape_arg_idx’ set but not used [-Wunused-but-set-variable]
+   16 |     int shape_arg_idx = 2;
+      |         ^~~~~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp: In function ‘int Linear_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp:86:27: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   86 | int Linear_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp: In function ‘int Conv2d_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp:110:27: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  110 | int Conv2d_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp: In function ‘int MaxPool2d_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp:154:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  154 | int MaxPool2d_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp: In function ‘int Dropout_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp:196:28: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  196 | int Dropout_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                 ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp: In function ‘int BatchNorm2d_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp:222:32: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  222 | int BatchNorm2d_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                     ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp: In function ‘int AvgPool2d_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp:264:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  264 | int AvgPool2d_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp: In function ‘int Sequential_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp:306:31: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  306 | int Sequential_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                    ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp: In function ‘int LayerForward_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp:344:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  344 | int LayerForward_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp: In function ‘int Conv2dSetWeights_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_layers.cpp:401:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  401 | int Conv2dSetWeights_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/model_io.cpp: In function ‘int SaveState_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/model_io.cpp:3:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    3 | int SaveState_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/model_io.cpp: In function ‘int LoadState_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/model_io.cpp:29:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   29 | int LoadState_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_optimizers.cpp: In function ‘int OptimizerSGD_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_optimizers.cpp:3:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    3 | int OptimizerSGD_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_optimizers.cpp: In function ‘int OptimizerAdam_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_optimizers.cpp:56:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   56 | int OptimizerAdam_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_optimizers.cpp: In function ‘int OptimizerStep_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_optimizers.cpp:124:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  124 | int OptimizerStep_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/basic_optimizers.cpp: In function ‘int OptimizerZeroGrad_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/basic_optimizers.cpp:149:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  149 | int OptimizerZeroGrad_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/cuda_utils.cpp: In function ‘int CudaDeviceInfo_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/cuda_utils.cpp:61:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   61 |         if (device_id >= torch::cuda::device_count()) {
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/cuda_utils.cpp: In function ‘int CudaMemoryInfo_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/cuda_utils.cpp:102:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+  102 |         if (device_id >= torch::cuda::device_count()) {
+      |             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 39%] Building CXX object CMakeFiles/libtorchtcl.dir/src/linear_algebra.cpp.o
+[ 41%] Building CXX object CMakeFiles/libtorchtcl.dir/src/recurrent_layers.cpp.o
+[ 44%] Building CXX object CMakeFiles/libtorchtcl.dir/src/amp_precision.cpp.o
+[ 46%] Building CXX object CMakeFiles/libtorchtcl.dir/src/advanced_tensor_operations.cpp.o
+[ 48%] Building CXX object CMakeFiles/libtorchtcl.dir/src/model_checkpointing.cpp.o
+[ 51%] Building CXX object CMakeFiles/libtorchtcl.dir/src/distributed_training.cpp.o
+[ 53%] Building CXX object CMakeFiles/libtorchtcl.dir/src/tensor_creation_ops.cpp.o
+[ 55%] Building CXX object CMakeFiles/libtorchtcl.dir/src/mathematical_operations.cpp.o
+/home/user/CascadeProjects/LIBTORCH/src/recurrent_layers.cpp: In function ‘int LSTM_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/recurrent_layers.cpp:93:25: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   93 | int LSTM_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/recurrent_layers.cpp: In function ‘int GRU_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/recurrent_layers.cpp:175:24: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  175 | int GRU_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/recurrent_layers.cpp: In function ‘int RNNTanh_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/recurrent_layers.cpp:257:28: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  257 | int RNNTanh_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                 ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/recurrent_layers.cpp: In function ‘int RNNRelu_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/recurrent_layers.cpp:339:28: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  339 | int RNNRelu_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                 ~~~~~~~~~~~^~~~~~~~~~
+[ 58%] Building CXX object CMakeFiles/libtorchtcl.dir/src/activation_functions.cpp.o
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp: In function ‘int Torch_AutocastEnable_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp:81:41: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   81 | int Torch_AutocastEnable_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp: In function ‘int Torch_AutocastDisable_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp:128:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  128 | int Torch_AutocastDisable_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp: In function ‘int Torch_AutocastIsEnabled_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp:158:44: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  158 | int Torch_AutocastIsEnabled_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                                 ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp: In function ‘int Torch_AutocastSetDtype_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp:189:43: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  189 | int Torch_AutocastSetDtype_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                                ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp: In function ‘int Torch_GradScalerNew_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp:236:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  236 | int Torch_GradScalerNew_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp: In function ‘int Torch_GradScalerScale_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp:283:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  283 | int Torch_GradScalerScale_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp: In function ‘int Torch_GradScalerStep_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp:319:41: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  319 | int Torch_GradScalerStep_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp: In function ‘int Torch_GradScalerUpdate_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp:352:43: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  352 | int Torch_GradScalerUpdate_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                                ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp: In function ‘int Torch_GradScalerGetScale_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp:378:45: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  378 | int Torch_GradScalerGetScale_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                                  ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp: In function ‘int Torch_TensorMaskedFill_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp:407:43: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  407 | int Torch_TensorMaskedFill_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                                ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp: In function ‘int Torch_TensorClamp_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/amp_precision.cpp:444:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  444 | int Torch_TensorClamp_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp: In function ‘int Torch_SaveCheckpoint_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp:31:41: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   31 | int Torch_SaveCheckpoint_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp: In function ‘int Torch_LoadCheckpoint_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp:124:41: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  124 | int Torch_LoadCheckpoint_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp: In function ‘int Torch_GetCheckpointInfo_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp:197:44: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  197 | int Torch_GetCheckpointInfo_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                                 ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp: In function ‘int Torch_SaveStateDict_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp:268:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  268 | int Torch_SaveStateDict_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp: In function ‘int Torch_LoadStateDict_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp:299:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  299 | int Torch_LoadStateDict_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp: In function ‘int Torch_FreezeModel_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp:334:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  334 | int Torch_FreezeModel_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp: In function ‘int Torch_UnfreezeModel_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/model_checkpointing.cpp:363:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  363 | int Torch_UnfreezeModel_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int Torch_TensorSlice_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:16:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   16 | int Torch_TensorSlice_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int Torch_TensorAdvancedIndex_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:60:46: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   60 | int Torch_TensorAdvancedIndex_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int Torch_SparseTensorCreate_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:122:45: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  122 | int Torch_SparseTensorCreate_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                                  ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int Torch_SparseTensorDense_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:170:44: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  170 | int Torch_SparseTensorDense_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                                 ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int Torch_ModelSummary_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:203:39: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  203 | int Torch_ModelSummary_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                            ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int Torch_CountParameters_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:243:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  243 | int Torch_CountParameters_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int Torch_TensorNorm_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:292:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  292 | int Torch_TensorNorm_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int Torch_TensorNormalize_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:342:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  342 | int Torch_TensorNormalize_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int Torch_TensorUnique_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:400:39: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  400 | int Torch_TensorUnique_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                            ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int TensorBlockDiag_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:462:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  462 | int TensorBlockDiag_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int TensorBroadcastShapes_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:485:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  485 | int TensorBroadcastShapes_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int TensorSqueezeMultiple_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:540:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  540 | int TensorSqueezeMultiple_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int TensorUnsqueezeMultiple_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:570:44: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  570 | int TensorUnsqueezeMultiple_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                 ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int TensorTensorSplit_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:596:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  596 | int TensorTensorSplit_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int TensorHSplit_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:648:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  648 | int TensorHSplit_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int TensorVSplit_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:699:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  699 | int TensorVSplit_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int TensorDSplit_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:750:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  750 | int TensorDSplit_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int TensorColumnStack_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:801:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  801 | int TensorColumnStack_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int TensorRowStack_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:839:35: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  839 | int TensorRowStack_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                        ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int TensorDStack_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:877:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  877 | int TensorDStack_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int TensorHStack_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:915:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  915 | int TensorHStack_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp: In function ‘int TensorVStack_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_tensor_operations.cpp:953:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  953 | int TensorVStack_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp: In function ‘int Torch_DistributedInit_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp:18:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   18 | int Torch_DistributedInit_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp: In function ‘int Torch_RealAllReduce_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp:77:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   77 | int Torch_RealAllReduce_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp: In function ‘int Torch_RealBroadcast_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp:123:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  123 | int Torch_RealBroadcast_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp: In function ‘int Torch_DistributedBarrier_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp:162:45: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  162 | int Torch_DistributedBarrier_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                                  ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp: In function ‘int Torch_GetRank_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp:186:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  186 | int Torch_GetRank_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp: In function ‘int Torch_GetWorldSize_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp:196:39: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  196 | int Torch_GetWorldSize_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                            ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp: In function ‘int Torch_IsDistributed_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_training.cpp:206:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  206 | int Torch_IsDistributed_Cmd(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+[ 60%] Building CXX object CMakeFiles/libtorchtcl.dir/src/extended_convolution_layers.cpp.o
+[ 62%] Building CXX object CMakeFiles/libtorchtcl.dir/src/extended_pooling_layers.cpp.o
+[ 65%] Building CXX object CMakeFiles/libtorchtcl.dir/src/extended_loss_functions.cpp.o
+[ 67%] Building CXX object CMakeFiles/libtorchtcl.dir/src/extended_optimizers.cpp.o
+[ 69%] Building CXX object CMakeFiles/libtorchtcl.dir/src/tensor_manipulation_extensions.cpp.o
+[ 72%] Building CXX object CMakeFiles/libtorchtcl.dir/src/vision_operations.cpp.o
+[ 74%] Building CXX object CMakeFiles/libtorchtcl.dir/src/linear_algebra_extensions.cpp.o
+[ 76%] Building CXX object CMakeFiles/libtorchtcl.dir/src/transformer_components.cpp.o
+/home/user/CascadeProjects/LIBTORCH/src/extended_optimizers.cpp: In function ‘int LRSchedulerStepAdvanced_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/extended_optimizers.cpp:530:14: warning: variable ‘has_metric’ set but not used [-Wunused-but-set-variable]
+  530 |         bool has_metric = false;
+      |              ^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/extended_optimizers.cpp: In function ‘int OptimizerNovoGrad_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/extended_optimizers.cpp:993:14: warning: variable ‘grad_averaging’ set but not used [-Wunused-but-set-variable]
+  993 |         bool grad_averaging = false;
+      |              ^~~~~~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/vision_operations.cpp: In function ‘int RoIAlign_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/vision_operations.cpp:611:14: warning: variable ‘aligned’ set but not used [-Wunused-but-set-variable]
+  611 |         bool aligned = true;
+      |              ^~~~~~~
+[ 79%] Building CXX object CMakeFiles/libtorchtcl.dir/src/embedding_layers.cpp.o
+[ 81%] Building CXX object CMakeFiles/libtorchtcl.dir/src/sparse_tensor_operations.cpp.o
+[ 83%] Building CXX object CMakeFiles/libtorchtcl.dir/src/quantization_operations.cpp.o
+[ 86%] Building CXX object CMakeFiles/libtorchtcl.dir/src/padding_layers.cpp.o
+/home/user/CascadeProjects/LIBTORCH/src/transformer_components.cpp: In function ‘int TransformerEncoderLayer_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/transformer_components.cpp:112:13: warning: unused variable ‘nhead’ [-Wunused-variable]
+  112 |         int nhead = GetIntFromObj(interp, objv[3]);
+      |             ^~~~~
+/home/user/CascadeProjects/LIBTORCH/src/transformer_components.cpp: In function ‘int TransformerDecoderLayer_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/transformer_components.cpp:148:13: warning: unused variable ‘nhead’ [-Wunused-variable]
+  148 |         int nhead = GetIntFromObj(interp, objv[4]);
+      |             ^~~~~
+/home/user/CascadeProjects/LIBTORCH/src/transformer_components.cpp: In function ‘int TransformerEncoder_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/transformer_components.cpp:185:13: warning: unused variable ‘nhead’ [-Wunused-variable]
+  185 |         int nhead = GetIntFromObj(interp, objv[3]);
+      |             ^~~~~
+/home/user/CascadeProjects/LIBTORCH/src/transformer_components.cpp: In function ‘int TransformerDecoder_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/transformer_components.cpp:222:13: warning: unused variable ‘nhead’ [-Wunused-variable]
+  222 |         int nhead = GetIntFromObj(interp, objv[4]);
+      |             ^~~~~
+[ 88%] Building CXX object CMakeFiles/libtorchtcl.dir/src/random_number_generation.cpp.o
+[ 90%] Building CXX object CMakeFiles/libtorchtcl.dir/src/automatic_differentiation.cpp.o
+[ 93%] Building CXX object CMakeFiles/libtorchtcl.dir/src/memory_performance.cpp.o
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp: In function ‘int TensorSparseCOO_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp:8:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    8 | int TensorSparseCOO_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp: In function ‘int TensorSparseCSR_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp:66:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   66 | int TensorSparseCSR_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp: In function ‘int TensorSparseCSC_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp:130:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  130 | int TensorSparseCSC_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp: In function ‘int TensorSparseToDense_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp:194:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  194 | int TensorSparseToDense_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp: In function ‘int TensorSparseAdd_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp:221:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  221 | int TensorSparseAdd_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp: In function ‘int TensorSparseMM_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp:263:35: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  263 | int TensorSparseMM_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                        ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp: In function ‘int TensorSparseSum_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp:298:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  298 | int TensorSparseSum_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp: In function ‘int TensorSparseSoftmax_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp:335:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  335 | int TensorSparseSoftmax_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp: In function ‘int TensorSparseLogSoftmax_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp:368:43: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  368 | int TensorSparseLogSoftmax_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp: In function ‘int TensorSparseMask_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp:401:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  401 | int TensorSparseMask_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp: In function ‘int TensorSparseTranspose_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp:436:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  436 | int TensorSparseTranspose_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp: In function ‘int TensorSparseCoalesce_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp:472:41: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  472 | int TensorSparseCoalesce_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp: In function ‘int TensorSparseReshape_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/sparse_tensor_operations.cpp:499:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  499 | int TensorSparseReshape_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+[ 95%] Building CXX object CMakeFiles/libtorchtcl.dir/src/advanced_signal_processing.cpp.o
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int ReflectionPad1D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:6:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    6 | int ReflectionPad1D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int ReflectionPad2D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:42:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   42 | int ReflectionPad2D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int ReflectionPad3D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:80:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   80 | int ReflectionPad3D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int ReplicationPad1D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:121:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  121 | int ReplicationPad1D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int ReplicationPad2D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:157:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  157 | int ReplicationPad2D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int ReplicationPad3D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:195:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  195 | int ReplicationPad3D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int ConstantPad1D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:236:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  236 | int ConstantPad1D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int ConstantPad2D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:277:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  277 | int ConstantPad2D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int ConstantPad3D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:320:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  320 | int ConstantPad3D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int CircularPad1D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:366:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  366 | int CircularPad1D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int CircularPad2D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:403:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  403 | int CircularPad2D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int CircularPad3D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:442:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  442 | int CircularPad3D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int ZeroPad1D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:484:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  484 | int ZeroPad1D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int ZeroPad2D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:520:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  520 | int ZeroPad2D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp: In function ‘int ZeroPad3D_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/padding_layers.cpp:558:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  558 | int ZeroPad3D_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorQuantizePerTensor_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:8:44: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    8 | int TensorQuantizePerTensor_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                 ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorQuantizePerChannel_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:47:45: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   47 | int TensorQuantizePerChannel_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                  ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorDequantize_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:95:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   95 | int TensorDequantize_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorFakeQuantizePerTensor_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:122:48: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  122 | int TensorFakeQuantizePerTensor_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                     ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorFakeQuantizePerChannel_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:174:49: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  174 | int TensorFakeQuantizePerChannel_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorIntRepr_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:235:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  235 | int TensorIntRepr_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorQScale_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:262:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  262 | int TensorQScale_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorQZeroPoint_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:287:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  287 | int TensorQZeroPoint_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorQPerChannelScales_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:312:44: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  312 | int TensorQPerChannelScales_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                 ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorQPerChannelZeroPoints_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:339:48: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  339 | int TensorQPerChannelZeroPoints_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                     ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorQPerChannelAxis_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:366:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  366 | int TensorQPerChannelAxis_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorQuantizedAdd_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:391:39: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  391 | int TensorQuantizedAdd_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                            ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorQuantizedMul_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:444:39: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  444 | int TensorQuantizedMul_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                            ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp: In function ‘int TensorQuantizedRelu_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/quantization_operations.cpp:490:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  490 | int TensorQuantizedRelu_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp: In function ‘int TensorManualSeed_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp:25:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   25 | int TensorManualSeed_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp: In function ‘int TensorInitialSeed_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp:46:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   46 | int TensorInitialSeed_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp: In function ‘int TensorSeed_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp:64:31: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   64 | int TensorSeed_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                    ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp: In function ‘int TensorGetRngState_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp:83:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   83 | int TensorGetRngState_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp: In function ‘int TensorSetRngState_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp:101:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  101 | int TensorSetRngState_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp: In function ‘int TensorBernoulli_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp:124:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  124 | int TensorBernoulli_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp: In function ‘int TensorMultinomial_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp:152:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  152 | int TensorMultinomial_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp: In function ‘int TensorNormal_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp:172:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  172 | int TensorNormal_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp: In function ‘int TensorUniform_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp:212:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  212 | int TensorUniform_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp: In function ‘int TensorExponential_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp:242:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  242 | int TensorExponential_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp: In function ‘int TensorGamma_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp:274:32: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  274 | int TensorGamma_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                     ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp: In function ‘int TensorPoisson_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/random_number_generation.cpp:309:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  309 | int TensorPoisson_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp: In function ‘int TensorGrad_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp:4:31: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    4 | int TensorGrad_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                    ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp: In function ‘int TensorJacobian_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp:24:35: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   24 | int TensorJacobian_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                        ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp: In function ‘int TensorHessian_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp:43:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   43 | int TensorHessian_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp: In function ‘int TensorVJP_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp:62:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   62 | int TensorVJP_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp: In function ‘int TensorJVP_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp:80:30: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   80 | int TensorJVP_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp: In function ‘int TensorFunctionalCall_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp:98:41: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   98 | int TensorFunctionalCall_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp: In function ‘int TensorVMap_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp:115:31: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  115 | int TensorVMap_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                    ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp: In function ‘int TensorGradCheck_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp:132:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  132 | int TensorGradCheck_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp: In function ‘int TensorGradCheckFiniteDiff_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp:149:46: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  149 | int TensorGradCheckFiniteDiff_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp: In function ‘int TensorEnableGrad_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp:166:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  166 | int TensorEnableGrad_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp: In function ‘int TensorNoGrad_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp:183:33: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  183 | int TensorNoGrad_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                      ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp: In function ‘int TensorSetGradEnabled_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp:200:41: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  200 | int TensorSetGradEnabled_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp: In function ‘int TensorIsGradEnabled_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/automatic_differentiation.cpp:222:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  222 | int TensorIsGradEnabled_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+[ 97%] Building CXX object CMakeFiles/libtorchtcl.dir/src/distributed_operations.cpp.o
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp: In function ‘int TensorMemoryStats_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp:7:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    7 | int TensorMemoryStats_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp: In function ‘int TensorMemorySummary_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp:32:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   32 | int TensorMemorySummary_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp: In function ‘int TensorMemorySnapshot_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp:57:41: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   57 | int TensorMemorySnapshot_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp: In function ‘int TensorEmptyCache_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp:85:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   85 | int TensorEmptyCache_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp: In function ‘int TensorSynchronize_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp:106:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  106 | int TensorSynchronize_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp: In function ‘int TensorProfilerStart_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp:127:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  127 | int TensorProfilerStart_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp: In function ‘int TensorProfilerStop_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp:144:39: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  144 | int TensorProfilerStop_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                            ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp: In function ‘int TensorBenchmark_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp:161:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  161 | int TensorBenchmark_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp: In function ‘int TensorSetFlushDenormal_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp:188:43: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  188 | int TensorSetFlushDenormal_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp: In function ‘int TensorGetNumThreads_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp:211:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  211 | int TensorGetNumThreads_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp: In function ‘int TensorSetNumThreads_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/memory_performance.cpp:228:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  228 | int TensorSetNumThreads_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp: In function ‘int TensorFFTShift_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:6:35: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    6 | int TensorFFTShift_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                        ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp: In function ‘int TensorIFFTShift_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:38:36: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   38 | int TensorIFFTShift_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                         ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp: In function ‘int TensorHilbert_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:70:34: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   70 | int TensorHilbert_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                       ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp: In function ‘int TensorBartlettWindow_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:102:41: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  102 | int TensorBartlettWindow_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp: In function ‘int TensorBlackmanWindow_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:125:41: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  125 | int TensorBlackmanWindow_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp: In function ‘int TensorHammingWindow_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:148:40: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  148 | int TensorHammingWindow_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                             ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp: In function ‘int TensorHannWindow_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:171:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  171 | int TensorHannWindow_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp: In function ‘int TensorKaiserWindow_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:194:39: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  194 | int TensorKaiserWindow_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                            ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp: In function ‘int TensorSpectrogram_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:227:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  227 | int TensorSpectrogram_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp: In function ‘int TensorMelscaleFbanks_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:265:41: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  265 | int TensorMelscaleFbanks_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                              ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp: In function ‘int TensorMFCC_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:341:13: warning: variable ‘dct_type’ set but not used [-Wunused-but-set-variable]
+  341 |         int dct_type = 2;
+      |             ^~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:331:31: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  331 | int TensorMFCC_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                    ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp: In function ‘int TensorPitchShift_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:377:16: warning: unused variable ‘sample_rate’ [-Wunused-variable]
+  377 |         double sample_rate = GetDoubleFromObj(interp, objv[2]);
+      |                ^~~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:369:37: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  369 | int TensorPitchShift_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                          ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp: In function ‘int TensorTimeStretch_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/advanced_signal_processing.cpp:404:38: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  404 | int TensorTimeStretch_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                           ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp: In function ‘int TensorDistributedGather_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:15:13: warning: variable ‘dst’ set but not used [-Wunused-but-set-variable]
+   15 |         int dst = 0;
+      |             ^~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:6:44: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+    6 | int TensorDistributedGather_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                 ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp: In function ‘int TensorDistributedScatter_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:45:13: warning: variable ‘src’ set but not used [-Wunused-but-set-variable]
+   45 |         int src = 0;
+      |             ^~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:36:45: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   36 | int TensorDistributedScatter_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                  ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp: In function ‘int TensorDistributedReduceScatter_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:62:51: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   62 | int TensorDistributedReduceScatter_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                        ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp: In function ‘int TensorDistributedAllToAll_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:88:46: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+   88 | int TensorDistributedAllToAll_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                   ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp: In function ‘int TensorDistributedSend_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:118:13: warning: unused variable ‘dst’ [-Wunused-variable]
+  118 |         int dst = GetIntFromObj(interp, objv[2]);
+      |             ^~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:120:13: warning: variable ‘tag’ set but not used [-Wunused-but-set-variable]
+  120 |         int tag = 0;
+      |             ^~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:110:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  110 | int TensorDistributedSend_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp: In function ‘int TensorDistributedRecv_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:144:13: warning: unused variable ‘src’ [-Wunused-variable]
+  144 |         int src = GetIntFromObj(interp, objv[2]);
+      |             ^~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:146:13: warning: variable ‘tag’ set but not used [-Wunused-but-set-variable]
+  146 |         int tag = 0;
+      |             ^~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:136:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  136 | int TensorDistributedRecv_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp: In function ‘int TensorDistributedISend_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:171:13: warning: unused variable ‘dst’ [-Wunused-variable]
+  171 |         int dst = GetIntFromObj(interp, objv[2]);
+      |             ^~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:173:13: warning: variable ‘tag’ set but not used [-Wunused-but-set-variable]
+  173 |         int tag = 0;
+      |             ^~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:163:43: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  163 | int TensorDistributedISend_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp: In function ‘int TensorDistributedIRecv_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:197:13: warning: unused variable ‘src’ [-Wunused-variable]
+  197 |         int src = GetIntFromObj(interp, objv[2]);
+      |             ^~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:199:13: warning: variable ‘tag’ set but not used [-Wunused-but-set-variable]
+  199 |         int tag = 0;
+      |             ^~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:189:43: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  189 | int TensorDistributedIRecv_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                                ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp: In function ‘int TensorDistributedWait_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:215:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  215 | int TensorDistributedWait_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp: In function ‘int TensorDistributedTest_Cmd(ClientData, Tcl_Interp*, int, Tcl_Obj* const*)’:
+/home/user/CascadeProjects/LIBTORCH/src/distributed_operations.cpp:244:42: warning: unused parameter ‘clientData’ [-Wunused-parameter]
+  244 | int TensorDistributedTest_Cmd(ClientData clientData, Tcl_Interp* interp, int objc, Tcl_Obj* const objv[]) {
+      |                               ~~~~~~~~~~~^~~~~~~~~~
+[100%] Linking CXX shared library libtorchtcl.so
+[100%] Built target libtorchtcl
+
