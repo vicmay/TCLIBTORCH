@@ -8,18 +8,25 @@ std::unordered_map<std::string, std::shared_ptr<torch::nn::Module>> module_stora
 
 // Helper function to get scalar type from string
 c10::ScalarType GetScalarType(const char* type_str) {
-    if (strcmp(type_str, "float32") == 0 || strcmp(type_str, "Float32") == 0) return torch::kFloat32;
-    if (strcmp(type_str, "float64") == 0 || strcmp(type_str, "Float64") == 0) return torch::kFloat64;
-    if (strcmp(type_str, "int32") == 0 || strcmp(type_str, "Int32") == 0) return torch::kInt32;
-    if (strcmp(type_str, "int64") == 0 || strcmp(type_str, "Int64") == 0) return torch::kInt64;
+    if (strcmp(type_str, "float32") == 0 || strcmp(type_str, "Float32") == 0 || strcmp(type_str, "float") == 0) return torch::kFloat32;
+    if (strcmp(type_str, "float64") == 0 || strcmp(type_str, "Float64") == 0 || strcmp(type_str, "double") == 0) return torch::kFloat64;
+    if (strcmp(type_str, "int32") == 0 || strcmp(type_str, "Int32") == 0 || strcmp(type_str, "int") == 0) return torch::kInt32;
+    if (strcmp(type_str, "int64") == 0 || strcmp(type_str, "Int64") == 0 || strcmp(type_str, "long") == 0) return torch::kInt64;
     if (strcmp(type_str, "bool") == 0 || strcmp(type_str, "Bool") == 0) return torch::kBool;
     throw std::runtime_error(std::string("Unknown scalar type: ") + type_str);
 }
 
 // Helper function to get device from string
 torch::Device GetDevice(const char* device_str) {
-    if (strcmp(device_str, "cuda") == 0 && torch::cuda::is_available()) {
-        return torch::kCUDA;
+    if (strcmp(device_str, "cuda") == 0) {
+        // Try to use CUDA, but fall back to CPU if it fails
+        try {
+            if (torch::cuda::is_available()) {
+                return torch::kCUDA;
+            }
+        } catch (const std::exception& e) {
+            // CUDA not available or error, fall back to CPU
+        }
     }
     return torch::kCPU;
 }

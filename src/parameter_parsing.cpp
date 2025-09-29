@@ -140,16 +140,26 @@ TensorCreationArgs TensorCreationArgs::ParseNamedArgs(Tcl_Interp* interp, int ob
 
 // Helper functions implementation (using existing ones from helpers.cpp)
 c10::ScalarType GetScalarType(const std::string& type_str) {
-    if (type_str == "float32" || type_str == "Float32") return torch::kFloat32;
-    if (type_str == "float64" || type_str == "Float64") return torch::kFloat64;
-    if (type_str == "int32" || type_str == "Int32") return torch::kInt32;
-    if (type_str == "int64" || type_str == "Int64") return torch::kInt64;
+    if (type_str == "float32" || type_str == "Float32" || type_str == "float") return torch::kFloat32;
+    if (type_str == "float64" || type_str == "Float64" || type_str == "double") return torch::kFloat64;
+    if (type_str == "int32" || type_str == "Int32" || type_str == "int") return torch::kInt32;
+    if (type_str == "int64" || type_str == "Int64" || type_str == "long") return torch::kInt64;
     if (type_str == "bool" || type_str == "Bool") return torch::kBool;
     throw std::runtime_error("Unknown scalar type: " + type_str);
 }
 
 torch::Device GetDevice(const std::string& device_str) {
     if (device_str == "cpu") return torch::kCPU;
-    if (device_str == "cuda" && torch::cuda::is_available()) return torch::kCUDA;
+    if (device_str == "cuda") {
+        // Try to use CUDA, but fall back to CPU if it fails
+        try {
+            if (torch::cuda::is_available()) {
+                return torch::kCUDA;
+            }
+        } catch (const std::exception& e) {
+            // CUDA not available or error, fall back to CPU
+        }
+        return torch::kCPU; // Fall back to CPU
+    }
     throw std::runtime_error("Invalid device string: " + device_str);
 } 

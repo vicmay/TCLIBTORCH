@@ -42,7 +42,15 @@ int CudaIsAvailable_Cmd(ClientData, Tcl_Interp* interp, int objc, Tcl_Obj* const
     try {
         CudaIsAvailableArgs args = ParseCudaIsAvailableArgs(interp, objc, objv);
         
-        bool available = torch::cuda::is_available();
+        // Try to check CUDA availability, but handle errors gracefully
+        bool available = false;
+        try {
+            available = torch::cuda::is_available();
+        } catch (const std::exception& e) {
+            // CUDA not available due to hardware compatibility issues
+            available = false;
+        }
+        
         Tcl_SetResult(interp, const_cast<char*>(available ? "1" : "0"), TCL_VOLATILE);
         return TCL_OK;
     } catch (const std::exception& e) {

@@ -53,11 +53,8 @@ extern "C" {
             return TCL_ERROR;
         }
 
-        // Initialize CUDA if available
-        if (torch::cuda::is_available() && torch::cuda::device_count() > 0) {
-            c10::Device device(torch::kCUDA, 0);
-            torch::DeviceGuard guard(device);
-        }
+        // Skip CUDA initialization to avoid warnings on older hardware
+        // CUDA will be initialized on-demand when needed
 
         // Create namespace
         Tcl_CreateNamespace(interp, "torch", NULL, NULL);
